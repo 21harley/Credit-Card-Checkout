@@ -1,5 +1,8 @@
 const $d=document;
 const name=["visa.png","paypal.png","mastercard.png"];
+setInterval(()=>{
+  
+},500);
 $d.addEventListener("click",(e)=>{
    console.log(e.target.innerHTML);
    if(e.target.matches("#paso")){
@@ -20,4 +23,7 @@ $d.addEventListener("click",(e)=>{
    }
  
 });
+$d.addEventListener("submit",(e)=>{
+    e.preventDefault();
+})
 
