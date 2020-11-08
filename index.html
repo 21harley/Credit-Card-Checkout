@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="container-center">
+        <section class="item">
+            <h2>Order Summary</h2>
+            <div class="item-articulo">
+                <img class="item-articulo__img"src="asset/img/zapatos.png" alt="MDN">
+                <div class="item-articulo__des">
+                    <h3 class="item-articulo__des-title">Nike</h3>
+                    <h3 class="item-articulo__des-title">Free Run 3.0 Women</h3>
+                     <p class="item-articulo__des-title">Color:black/white,Size:10.2</p>
+                </div>
+                <div class="item-articulo__cost">
+                   <h3 class="cost">$99.25</h3>
+                </div>
+            </div>
+            <div class="item-articulo">
+               <img class="item-articulo__img"src="asset/img/bolso.png" alt="MDN">
+               <div class="item-articulo__des">
+                   <h3 class="item-articulo__des-title">Fajallraven</h3>
+                   <h3 class="item-articulo__des-title">Vintage Backpack</h3>
+                    <p class="item-articulo__des-title">Color:red,Size:20L</p>
+               </div>
+               <div class="item-articulo__cost">
+                  <h3 class="cost">$235.95</h3>
+               </div>         
+            </div>
+           <div class="item-articulo">
+               <img class="item-articulo__img"src="asset/img/doubleLunch.png" alt="MDN">
+               <div class="item-articulo__des">
+                   <h3 class="item-articulo__des-title">Monobento</h3>
+                   <h3 class="item-articulo__des-title">Double Lunckbox</h3>
+                    <p class="item-articulo__des-title">Color:black,Size:Medium</p>
+               </div>
+               <div class="item-articulo__cost">
+                  <h3 class="cost">$25.95</h3>
+               </div>                  
+           </div>
+           <div class="item-total">
+               <div class="item-total__datos">
+                   <h3 class="item-articulo__des-title">VAT 19%</h3>
+                   <h3 class="item-articulo__des-title">Delivery</h3>
+                   <h2 class="item-articulo__des-title">TOTAL</h2>            
+               </div>
+               <div class="item-total__suma">
+                   <h3 class="item-articulo__des-title">$68.75</h3>
+                   <h3 class="item-articulo__des-title">$4.95</h3>
+                   <h2 class="item-articulo__des-title">$435.55</h2>    
+               </div>
+           </div>
+       </section>
+       <section class="card">
+           <form class="form">
+             <div class="form-title">
+               <h4 class="form-title__des">Please select you card:</h4>
+               <select class="form-title__option"name="pago" id="paso">
+                   <option value="visa" id="visa">visa</option>
+                   <option value="paypal" id="paypal">paypal</option>
+                   <option value="mastercard" id="mastercard">mastercard</option>
+               </select>
+             </div>
+             <div class="form-card">
+                <img class="form-card__img"src="asset/img/visa.png" alt="MDN">
+             </div>
+             <div class="form-data">
+                 <div class="form-data__num">
+                   <h4 class="form-data__des">Card Number</h4>
+                   <input class="form-datos__input" id="cardNumb"type="text">
+                 </div>
+                 <div class="form-data__hold">
+                   <h4 class="form-data__des">Card Holder</h4>
+                   <input class="form-datos__input" id="cardHol"type="text">
+                 </div>
+                  <div class="form-data__exp">
+                     <h4 class="form-data__des">Expire</h4>
+                     <input class="form-datos__input" id="cardExp"type="text">
+                  </div>
+                  <div class="form-data__cvc">
+                     <h4 class="form-data__des">CVC</h4>
+                     <input class="form-datos__input" id="cardCVC"type="text">
+                  </div>
+             </div>
+             <div class="form-submit">
+               <button class="form-submit__button">Checkout</button>
+             </div>
+   
+           </form>
+       </section>    
+    </div>
+
+</div>
+    <script src="scritp.js"></script>
+</body>
+</html>
