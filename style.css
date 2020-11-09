@@ -267,6 +267,9 @@ outline: none;
 }
 
 @media only screen and (max-width: 1200px) {
+    body{
+        
+    }
     .container{
         text-align: center;
         height: 100%;
